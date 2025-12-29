@@ -1,0 +1,16 @@
+themes {
+     venice {
+        // Foreground colors
+        fg "#e8e4d8"              // Main text - bright warm white
+        bg "#1a1d12"              // Slightly lighter background for tab bar
+        black "#1a1d12"           // Slightly lighter dark
+        red "#f06850"             // Bright red (keywords)
+        green "#7ec4d0"           // Bright cyan-blue (strings/water)
+        yellow "#ffd878"          // Warm golden (types)
+        blue "#6db4e8"            // Bright clear blue (functions)
+        magenta "#e88860"         // Vibrant terracotta (constants)
+        cyan "#b0e4e8"            // Very bright water highlights
+        white "#f8f4e8"           // Very bright text
+        orange "#f0b060"          // Bright warm orange (operators)
+    }
+}

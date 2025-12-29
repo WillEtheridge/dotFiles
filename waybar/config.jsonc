@@ -1,0 +1,106 @@
+// -*- mode: jsonc -*-
+{
+  "margin-top": 10,
+  "margin-bottom": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "mode": "dock", // Waybar at top layer
+  "exclusive": true,
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  // "width": 1280, // Waybar width
+  "spacing": 0, // Gaps between modules (4px)
+  // Choose the order of the modules
+  "modules-left": [
+    "hyprland/workspaces",
+  ],
+  "modules-right": [
+    "clock#time",
+    "clock#cal",
+    "backlight",
+    "pulseaudio",
+    "network",
+    "custom/mullvad",
+    "battery"
+  ],
+  "hyprland/workspaces": {
+    "active-only": false,
+    "format": "{name}",
+  },
+  "clock#cal": {
+    "format": "{:%a %d %b}"
+  },
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": " {volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰈁",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰂄",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "custom/mullvad": {
+    "exec": "/home/will/.config/waybar/scripts/mullvad-status.sh",
+    "return-type": "json",
+    "interval": 5,
+    "format": "{}",
+    "tooltip": true
+  }
+}

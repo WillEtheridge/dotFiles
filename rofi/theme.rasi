@@ -1,0 +1,185 @@
+/**
+ * Condensed Rofi theme
+ * Rofi version: 2.0.0
+ **/
+* {
+    /* Color palette */
+    red:        rgba(240, 176, 96, 100%);
+    blue:       rgba(109, 180, 232, 100%);
+    lightfg:    rgba(109, 180, 232, 100%);
+    lightbg:    rgba(232, 228, 216, 100%);
+    background: rgba(248, 244, 232, 100%);
+    foreground: rgba(13, 15, 8, 100%);
+    
+    /* Derived colors */
+    background-color: transparent;
+    border-color:     var(foreground);
+    separatorcolor:   var(foreground);
+    spacing:          2;
+}
+
+element {
+    padding: 10px;
+    cursor:  pointer;
+    spacing: 5px;
+    border:  0;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: var(background);
+    text-color:       var(foreground);
+}
+
+element alternate.normal {
+    background-color: var(lightbg);
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color: var(background);
+    text-color:       var(red);
+}
+
+element alternate.urgent {
+    background-color: var(lightbg);
+}
+
+element normal.active,
+element alternate.active {
+    background-color: var(background);
+    text-color:       var(blue);
+}
+
+element alternate.active {
+    background-color: var(lightbg);
+}
+
+element selected.normal {
+    background-color: var(lightfg);
+    text-color:       var(lightbg);
+}
+
+element selected.urgent {
+    background-color: var(red);
+    text-color:       var(background);
+}
+
+element selected.active {
+    background-color: var(blue);
+    text-color:       var(background);
+}
+
+element-text,
+element-icon {
+    background-color: transparent;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+
+element-icon {
+    size: 1.0000em;
+}
+
+window {
+    padding:          5;
+    background-color: var(background);
+    border:           3;
+    border-color: var(red);
+    border-radius: 5;
+
+}
+
+mainbox {
+    padding: 0;
+    border:  0;
+}
+
+message {
+    padding:      1px;
+    border-color: var(separatorcolor);
+    border:       2px dash 0px 0px;
+}
+
+textbox {
+    text-color: var(foreground);
+}
+
+listview {
+    padding:      0px 0px 0px;
+    scrollbar:    false;
+    border-color: var(separatorcolor);
+    spacing:      0px;
+    fixed-height: 0;
+}
+
+scrollbar {
+    width:        2px;
+    padding:      0;
+    handle-width: 8px;
+    border:       0;
+    handle-color: var(foreground);
+}
+
+sidebar {
+    border-color: var(separatorcolor);
+    border:       2px dash 0px 0px;
+}
+
+button {
+    cursor:     pointer;
+    spacing:    0;
+    text-color: var(foreground);
+}
+
+button selected {
+    background-color: var(lightfg);
+    text-color:       var(lightbg);
+}
+
+num-filtered-rows,
+num-rows,
+textbox-num-sep {
+    expand:     false;
+    text-color: Gray;
+}
+
+textbox-num-sep {
+    str: "/";
+}
+
+inputbar {
+    padding:    0px;
+    spacing:    0px;
+    text-color: var(foreground);
+    children:   ["prompt","textbox-prompt-colon","entry","overlay","num-filtered-rows","textbox-num-sep","num-rows","case-indicator"];
+}
+
+overlay {
+    padding:          0px 0.2000em;
+    background-color: var(foreground);
+    foreground-color: var(background);
+    margin:           0px 0.2000em;
+    text-color:       var(background);
+}
+
+case-indicator,
+prompt {
+    spacing:    0;
+    text-color: var(foreground);
+}
+
+entry {
+    text-color:        var(foreground);
+    cursor:            text;
+    spacing:           0;
+    placeholder-color: Gray;
+    placeholder:       "Type to filter";
+}
+
+textbox-prompt-colon {
+    margin:     0px 0.3000em 0.0000em 0.0000em;
+    expand:     false;
+    str:        ":";
+    text-color: inherit;
+}

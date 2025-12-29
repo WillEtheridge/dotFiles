@@ -1,0 +1,30 @@
+[colors]
+[colors.primary]
+background = '#1a1d12'  # Venice dark background
+foreground = '#e8e4d8'  # Venice main text - bright warm white
+
+# Normal colors
+[colors.normal]
+black = '#1a1d12'       # Venice dark background
+red = '#f06850'         # Venice bright red (keywords)
+green = '#7ec4d0'       # Venice bright cyan-blue (strings/water)
+yellow = '#ffd878'      # Venice warm golden (types)
+blue = '#6db4e8'        # Venice bright clear blue (functions)
+magenta = '#e88860'     # Venice vibrant terracotta (constants)
+cyan = '#b0e4e8'        # Venice very bright water highlights
+white = '#b8b0a0'       # Venice dimmer text (silver)
+
+# Bright colors
+[colors.bright]
+black = '#252820'       # Venice highlighted background (gray)
+red = '#f06850'         # Venice bright red
+green = '#7ec4d0'       # Venice cyan-blue water
+yellow = '#ffd878'      # Venice golden
+blue = '#6db4e8'        # Venice clear blue
+magenta = '#e88860'     # Venice terracotta
+cyan = '#b0e4e8'        # Venice water highlights
+white = '#f8f4e8'       # Venice very bright text
+
+[colors.selection]
+background = '#252820'  # Venice gray highlight
+foreground = '#f8f4e8'  # Venice very bright text
