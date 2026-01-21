@@ -1,0 +1,6 @@
+2026/01/16-14:51:11.791 3dab Creating DB /home/will/.config/chromium/Default/WebStorage/18/IndexedDB/indexeddb.leveldb since it was missing.
+2026/01/16-14:51:11.793 3dab Reusing MANIFEST /home/will/.config/chromium/Default/WebStorage/18/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2026/01/16-14:53:11.711 3d98 Level-0 table #5: started
+2026/01/16-14:53:11.713 3d98 Level-0 table #5: 9854 bytes OK
+2026/01/16-14:53:11.714 3d98 Delete type=0 #3
+2026/01/16-14:53:11.714 3d98 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

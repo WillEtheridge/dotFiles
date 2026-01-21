@@ -1,0 +1,6 @@
+2026/01/20-21:18:27.744 5 Reusing MANIFEST /home/will/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2026/01/20-21:18:27.749 5 Recovering log #33
+2026/01/20-21:18:27.749 5 Reusing old log /home/will/.config/chromium/Default/Local Storage/leveldb/000033.log 
+2026/01/20-21:19:00.066 7 Level-0 table #37: started
+2026/01/20-21:19:00.070 7 Level-0 table #37: 37889 bytes OK
+2026/01/20-21:19:00.072 7 Delete type=0 #33
